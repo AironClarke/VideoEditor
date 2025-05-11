@@ -13,9 +13,15 @@
     "stylelint": "stylelint **/*"
   },
   "dependencies": {
+    "@remotion/cli": "4.0.300",
+    "@remotion/eslint-plugin": "^4.0.300",
+    "@remotion/lambda": "4.0.300",
+    "@remotion/player": "4.0.300",
+    "@remotion/renderer": "4.0.300",
     "@tailwindcss/vite": "^4.1.6",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "remotion": "4.0.300"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",

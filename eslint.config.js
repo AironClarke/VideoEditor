@@ -16,6 +16,7 @@ export default tseslint.config(
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
+      '@remotion': require('@remotion/eslint-plugin')
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
@@ -34,5 +35,11 @@ export default tseslint.config(
       ],
       'max-len': ['error', { code: 90 }]
     },
+    overrides: [
+      {
+        files: ['remotion/*.{ts,tsx}'],
+        extends: ['plugin:@remotion/recommended']
+      }
+    ]
   },
 )
